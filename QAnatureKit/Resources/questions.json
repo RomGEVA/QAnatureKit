@@ -1,0 +1,196 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "text": "What is the fastest land animal?",
+            "options": ["Cheetah", "Lion", "Antelope", "Tiger"],
+            "correctAnswerIndex": 0,
+            "category": "animals",
+            "difficulty": "easy"
+        },
+        {
+            "id": 2,
+            "text": "What is the tallest plant in the world?",
+            "options": ["Sequoia", "Eucalyptus", "Baobab", "Oak"],
+            "correctAnswerIndex": 0,
+            "category": "plants",
+            "difficulty": "easy"
+        },
+        {
+            "id": 3,
+            "text": "What percentage of Earth's surface is covered by water?",
+            "options": ["50%", "60%", "70%", "80%"],
+            "correctAnswerIndex": 2,
+            "category": "ecology",
+            "difficulty": "medium"
+        },
+        {
+            "id": 4,
+            "text": "Which animal can change its skin color?",
+            "options": ["Chameleon", "Gecko", "Iguana", "Monitor Lizard"],
+            "correctAnswerIndex": 0,
+            "category": "animals",
+            "difficulty": "easy"
+        },
+        {
+            "id": 5,
+            "text": "Which plant is a symbol of peace?",
+            "options": ["Rose", "Olive", "Lotus", "Laurel"],
+            "correctAnswerIndex": 1,
+            "category": "plants",
+            "difficulty": "medium"
+        },
+        {
+            "id": 6,
+            "text": "Which animal can sleep while standing?",
+            "options": ["Horse", "Cow", "Deer", "Giraffe"],
+            "correctAnswerIndex": 0,
+            "category": "animals",
+            "difficulty": "easy"
+        },
+        {
+            "id": 7,
+            "text": "What is the most poisonous plant in the world?",
+            "options": ["Belladonna", "Aconite", "Hemlock", "Poison Hemlock"],
+            "correctAnswerIndex": 1,
+            "category": "plants",
+            "difficulty": "hard"
+        },
+        {
+            "id": 8,
+            "text": "Which gas makes up most of Earth's atmosphere?",
+            "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+            "correctAnswerIndex": 1,
+            "category": "ecology",
+            "difficulty": "medium"
+        },
+        {
+            "id": 9,
+            "text": "Which animal can see in ultraviolet light?",
+            "options": ["Bee", "Butterfly", "Hummingbird", "All of the above"],
+            "correctAnswerIndex": 3,
+            "category": "animals",
+            "difficulty": "hard"
+        },
+        {
+            "id": 10,
+            "text": "Which plant can survive in space?",
+            "options": ["Cactus", "Tillandsia", "Lichen", "Moss"],
+            "correctAnswerIndex": 2,
+            "category": "plants",
+            "difficulty": "hard"
+        },
+        {
+            "id": 11,
+            "text": "What percentage of the world's ocean has been explored by humans?",
+            "options": ["5%", "10%", "15%", "20%"],
+            "correctAnswerIndex": 0,
+            "category": "ecology",
+            "difficulty": "hard"
+        },
+        {
+            "id": 12,
+            "text": "Which animal can regenerate lost limbs?",
+            "options": ["Lizard", "Starfish", "Axolotl", "All of the above"],
+            "correctAnswerIndex": 3,
+            "category": "animals",
+            "difficulty": "medium"
+        },
+        {
+            "id": 13,
+            "text": "What is the oldest plant on Earth?",
+            "options": ["Sequoia", "Bristlecone Pine", "Oak", "Baobab"],
+            "correctAnswerIndex": 1,
+            "category": "plants",
+            "difficulty": "medium"
+        },
+        {
+            "id": 14,
+            "text": "What percentage of the world's forests have been destroyed in the last 100 years?",
+            "options": ["20%", "30%", "40%", "50%"],
+            "correctAnswerIndex": 2,
+            "category": "ecology",
+            "difficulty": "medium"
+        },
+        {
+            "id": 15,
+            "text": "Which animal can change its sex during its lifetime?",
+            "options": ["Clownfish", "Sea Bass", "Snail", "All of the above"],
+            "correctAnswerIndex": 3,
+            "category": "animals",
+            "difficulty": "hard"
+        },
+        {
+            "id": 16,
+            "text": "Which ocean is the largest on Earth?",
+            "options": ["Atlantic", "Pacific", "Indian", "Arctic"],
+            "correctAnswerIndex": 1,
+            "category": "water",
+            "difficulty": "easy"
+        },
+        {
+            "id": 17,
+            "text": "What substance gives water its blue tint?",
+            "options": ["Oxygen", "Hydrogen", "Copper", "Water itself"],
+            "correctAnswerIndex": 3,
+            "category": "water",
+            "difficulty": "medium"
+        },
+        {
+            "id": 18,
+            "text": "What is the deepest body of water in the world?",
+            "options": ["Lake Baikal", "Caspian Sea", "Mariana Trench", "Lake Victoria"],
+            "correctAnswerIndex": 2,
+            "category": "water",
+            "difficulty": "hard"
+        },
+        {
+            "id": 19,
+            "text": "Which mushroom is considered the most poisonous?",
+            "options": ["Fly Agaric", "Death Cap", "Chanterelle", "Button Mushroom"],
+            "correctAnswerIndex": 1,
+            "category": "fungi",
+            "difficulty": "easy"
+        },
+        {
+            "id": 20,
+            "text": "Which fungus is used to produce penicillin antibiotic?",
+            "options": ["Penicillium", "Fly Agaric", "Oyster Mushroom", "Button Mushroom"],
+            "correctAnswerIndex": 0,
+            "category": "fungi",
+            "difficulty": "medium"
+        },
+        {
+            "id": 21,
+            "text": "Which mushroom is called 'forest meat'?",
+            "options": ["Porcini", "Honey Mushroom", "Slippery Jack", "Birch Bolete"],
+            "correctAnswerIndex": 0,
+            "category": "fungi",
+            "difficulty": "medium"
+        },
+        {
+            "id": 22,
+            "text": "Which bird can fly backwards?",
+            "options": ["Sparrow", "Hummingbird", "Owl", "Pigeon"],
+            "correctAnswerIndex": 1,
+            "category": "birds",
+            "difficulty": "medium"
+        },
+        {
+            "id": 23,
+            "text": "What is the largest bird in the world?",
+            "options": ["Ostrich", "Stork", "Pelican", "Eagle"],
+            "correctAnswerIndex": 0,
+            "category": "birds",
+            "difficulty": "easy"
+        },
+        {
+            "id": 24,
+            "text": "Which bird can dive to depths of more than 100 meters?",
+            "options": ["Penguin", "Loon", "Cormorant", "Albatross"],
+            "correctAnswerIndex": 0,
+            "category": "birds",
+            "difficulty": "hard"
+        }
+    ]
+} 

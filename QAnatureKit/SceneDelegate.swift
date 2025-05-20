@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,11 +14,40 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        guard let windowScene = (scene as? UIWindowScene) else {return}
+        window = UIWindow(windowScene: windowScene)
+        // Используем optional binding как в SwiftUI версии
+               let isOnboardingCompleted = UserDefaults.standard.object(forKey: "isOnboardingCompleted") as? Bool ?? false
+               
+               if !isOnboardingCompleted {
+                   // Создаем модель для binding
+                   var onboardingCompleted = false {
+                       didSet {
+                           UserDefaults.standard.set(onboardingCompleted, forKey: "isOnboardingCompleted")
+                           if onboardingCompleted {
+                               self.switchToMainTabView()
+                           }
+                       }
+                   }
+                   
+                   let rootView = OnboardingView(isOnboardingCompleted: Binding<Bool?>(
+                       get: { onboardingCompleted },
+                       set: { onboardingCompleted = $0! }
+                   ))
+                   
+                   window?.rootViewController = UIHostingController(rootView: rootView)
+               } else {
+                   window?.rootViewController = UIHostingController(rootView: MainTabView())
+               }
+        window?.makeKeyAndVisible()
         guard let _ = (scene as? UIWindowScene) else { return }
     }
+    
+    private func switchToMainTabView() {
+           UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve, animations: {
+               self.window?.rootViewController = UIHostingController(rootView: MainTabView())
+           }, completion: nil)
+       }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
