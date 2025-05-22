@@ -19,7 +19,7 @@ struct SettingsView: View {
                     }
                     
                     Button(action: {
-                        if let url = URL(string: "https://your-privacy-policy-url.com") {
+                        if let url = URL(string: "https://www.termsfeed.com/live/26b5b286-7210-4cca-89f5-cd4a79706b66") {
                             UIApplication.shared.open(url)
                         }
                     }) {
