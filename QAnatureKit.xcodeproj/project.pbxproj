@@ -3,50 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6D81237ACE2EC2A76BD922AD /* Pods_QAnatureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB5D412BEA9DF511A67277C /* Pods_QAnatureKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		5D03085058E97FA97074F0DB /* Pods-QAnatureKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QAnatureKit.debug.xcconfig"; path = "Target Support Files/Pods-QAnatureKit/Pods-QAnatureKit.debug.xcconfig"; sourceTree = "<group>"; };
 		749D9B0B2DDCA480001FB843 /* QAnatureKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QAnatureKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86AA603303510FE9E87D23D2 /* Pods-QAnatureKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QAnatureKit.release.xcconfig"; path = "Target Support Files/Pods-QAnatureKit/Pods-QAnatureKit.release.xcconfig"; sourceTree = "<group>"; };
+		BEB5D412BEA9DF511A67277C /* Pods_QAnatureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QAnatureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		749D9B1D2DDCA480001FB843 /* Exceptions for "QAnatureKit" folder in "QAnatureKit" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 749D9B0A2DDCA480001FB843 /* QAnatureKit */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		749D9B0D2DDCA480001FB843 /* QAnatureKit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				749D9B1D2DDCA480001FB843 /* Exceptions for "QAnatureKit" folder in "QAnatureKit" target */,
-			);
-			path = QAnatureKit;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		749D9B082DDCA480001FB843 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D81237ACE2EC2A76BD922AD /* Pods_QAnatureKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0964C5F00EF6DAA53F78BC2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D03085058E97FA97074F0DB /* Pods-QAnatureKit.debug.xcconfig */,
+				86AA603303510FE9E87D23D2 /* Pods-QAnatureKit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		70E1FF7B6986CED514237116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB5D412BEA9DF511A67277C /* Pods_QAnatureKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		749D9B022DDCA480001FB843 = {
 			isa = PBXGroup;
 			children = (
 				749D9B0D2DDCA480001FB843 /* QAnatureKit */,
 				749D9B0C2DDCA480001FB843 /* Products */,
+				0964C5F00EF6DAA53F78BC2D /* Pods */,
+				70E1FF7B6986CED514237116 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +65,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		749D9B0D2DDCA480001FB843 /* QAnatureKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QAnatureKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +79,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 749D9B1E2DDCA480001FB843 /* Build configuration list for PBXNativeTarget "QAnatureKit" */;
 			buildPhases = (
+				314FA2A68F394DBF55E28114 /* [CP] Check Pods Manifest.lock */,
 				749D9B072DDCA480001FB843 /* Sources */,
 				749D9B082DDCA480001FB843 /* Frameworks */,
 				749D9B092DDCA480001FB843 /* Resources */,
@@ -73,12 +88,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				749D9B0D2DDCA480001FB843 /* QAnatureKit */,
-			);
 			name = QAnatureKit;
-			packageProductDependencies = (
-			);
 			productName = QAnatureKit;
 			productReference = 749D9B0B2DDCA480001FB843 /* QAnatureKit.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +109,7 @@
 				};
 			};
 			buildConfigurationList = 749D9B062DDCA480001FB843 /* Build configuration list for PBXProject "QAnatureKit" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +117,6 @@
 				Base,
 			);
 			mainGroup = 749D9B022DDCA480001FB843;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 749D9B0C2DDCA480001FB843 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +136,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		314FA2A68F394DBF55E28114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QAnatureKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		749D9B072DDCA480001FB843 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +174,7 @@
 /* Begin XCBuildConfiguration section */
 		749D9B1F2DDCA480001FB843 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D03085058E97FA97074F0DB /* Pods-QAnatureKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -173,6 +208,7 @@
 		};
 		749D9B202DDCA480001FB843 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86AA603303510FE9E87D23D2 /* Pods-QAnatureKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
