@@ -2,7 +2,8 @@ import SwiftUI
 
 struct OnboardingView: View {
     @State private var currentPage = 0
-    @Binding var isOnboardingCompleted: Bool?
+    @AppStorage("isOnboardingCompleted") private var isOnboardingCompleted = false
+    @State private var isPresentMainApp = false
     
     var body: some View {
         ZStack {
@@ -33,7 +34,9 @@ struct OnboardingView: View {
                             currentPage += 1
                         }
                     } else {
+                        print("End onboarding")
                         isOnboardingCompleted = true
+                        isPresentMainApp = true
                     }
                 }) {
                     Text(currentPage < 1 ? "Next" : "Get Started")
@@ -46,6 +49,9 @@ struct OnboardingView: View {
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 30)
+            }
+            .fullScreenCover(isPresented: $isPresentMainApp) {
+                MainTabView()
             }
         }
     }
@@ -81,5 +87,5 @@ struct OnboardingPageView: View {
 }
 
 #Preview {
-    OnboardingView(isOnboardingCompleted: .constant(false))
+    OnboardingView()
 } 

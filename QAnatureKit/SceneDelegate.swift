@@ -14,33 +14,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = (scene as? UIWindowScene) else {return}
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
         window = UIWindow(windowScene: windowScene)
-        // Используем optional binding как в SwiftUI версии
-               let isOnboardingCompleted = UserDefaults.standard.object(forKey: "isOnboardingCompleted") as? Bool ?? false
-               
-               if !isOnboardingCompleted {
-                   // Создаем модель для binding
-                   var onboardingCompleted = false {
-                       didSet {
-                           UserDefaults.standard.set(onboardingCompleted, forKey: "isOnboardingCompleted")
-                           if onboardingCompleted {
-                               self.switchToMainTabView()
-                           }
-                       }
-                   }
-                   
-                   let rootView = OnboardingView(isOnboardingCompleted: Binding<Bool?>(
-                       get: { onboardingCompleted },
-                       set: { onboardingCompleted = $0! }
-                   ))
-                   
-                   window?.rootViewController = UIHostingController(rootView: rootView)
-               } else {
-                   window?.rootViewController = UIHostingController(rootView: MainTabView())
-               }
+        let loadingSplash = LoadingSplash()
+        window?.rootViewController = loadingSplash
         window?.makeKeyAndVisible()
-        guard let _ = (scene as? UIWindowScene) else { return }
     }
     
     private func switchToMainTabView() {
